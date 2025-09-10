@@ -78,9 +78,116 @@ npm install
 npm run build
 ```
 
-4. Start the MCP server:
+4. Start the interactive interface:
 ```bash
 npm start
+```
+
+## Quick Start Guide
+
+### 🚀 Interactive Data Analysis (Recommended)
+
+Start the interactive query interface to analyze data using natural language:
+
+```powershell
+# Windows PowerShell
+cd C:\Users\preci\DATAVIZ
+node interactive-query-demo.js
+```
+
+```bash  
+# Linux/Mac Terminal
+cd /path/to/DATAVIZ
+node interactive-query-demo.js
+```
+
+Once started, you can ask questions like:
+- `what trends do you see in the sales data?`
+- `show me correlations between revenue and sales`
+- `find patterns in the user metrics`
+- `create visualizations for seasonal patterns`
+
+### 📊 Generate Visualizations
+
+Create actual SVG/HTML visualizations:
+
+```bash
+# Run visualization test
+node test-visualization.js
+
+# Check for generated files
+ls *.svg *.html *.png
+```
+
+### 🦠 COVID-19 Data Analysis
+
+Run comprehensive COVID-19 data analysis:
+
+```bash
+# Available COVID analysis commands
+npm run demo           # COVID analysis demo
+npm run test:covid     # Comprehensive COVID data test
+```
+
+### 📂 Analyze Your Own Data
+
+1. **Place your data files** in the project directory:
+   ```bash
+   # Supported formats: CSV, JSON, Excel, TSV
+   cp /path/to/your/data.csv ./
+   cp /path/to/your/metrics.json ./
+   ```
+
+2. **Start interactive analysis**:
+   ```bash
+   node interactive-query-demo.js
+   ```
+
+3. **Ask about your data**:
+   ```
+   🤖 DataViz> analyze data.csv
+   🤖 DataViz> what trends exist in my sales column?
+   🤖 DataViz> create scatter plot of price vs demand
+   🤖 DataViz> show correlations between all numeric columns
+   ```
+
+### 🎯 Available Commands
+
+| Command | Description |
+|---------|-------------|
+| `npm start` | Start interactive query interface |
+| `npm run interactive` | Alternative interactive start |
+| `npm run demo` | Run COVID-19 analysis demo |
+| `npm run test:covid` | Comprehensive COVID data analysis |
+| `npm run build` | Compile TypeScript files |
+| `npm run dev` | Development mode with watch |
+| `npm test` | Run test suite |
+| `npm run lint` | Code linting |
+
+### 💡 Example Queries
+
+#### Data Analysis Queries
+```
+🤖 DataViz> what seasonal trends exist in the data?
+🤖 DataViz> find anomalies in the last 6 months
+🤖 DataViz> show correlations between all variables
+🤖 DataViz> what distribution patterns do you see?
+```
+
+#### Visualization Requests
+```
+🤖 DataViz> create time series plot for sales data
+🤖 DataViz> generate scatter plot of x vs y
+🤖 DataViz> show histogram of customer ages
+🤖 DataViz> create correlation heatmap
+```
+
+#### COVID-19 Specific Queries
+```
+🤖 DataViz> what are seasonal trends in covid 19 confirmed cases?
+🤖 DataViz> show correlations between deaths and confirmed cases
+🤖 DataViz> find anomalies in covid death rates
+🤖 DataViz> compare pattern similarity between countries
 ```
 
 ## Development

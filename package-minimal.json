@@ -1,0 +1,18 @@
+{
+  "name": "dataviz-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for data pattern analysis and visualization",
+  "main": "interactive-query-demo.js",
+  "type": "module",
+  "scripts": {
+    "query": "node interactive-query-demo.js",
+    "interactive": "node interactive-query-demo.js",
+    "start": "node interactive-query-demo.js"
+  },
+  "keywords": ["mcp", "data-analysis", "visualization", "patterns"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "simple-statistics": "^7.8.0"
+  }
+}
